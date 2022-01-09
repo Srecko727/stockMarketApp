@@ -20,5 +20,10 @@ def home(request):
         return render(request, 'home.html', {'ticker':"Enter A Ticker Symbol Above..."})
 
 
+
+
 def about(request):
     return render(request, 'about.html', {})
+
+def add_stock(request):
+    return render(request, 'add_stock.html', {})
