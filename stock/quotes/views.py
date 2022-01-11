@@ -34,7 +34,7 @@ def add_stock(request):
         form = StockForm(request.POST or None)
         if form.is_valid():
             form.save()
-            messages.success(request, ("Stock has been added successfully"))
+            messages.success(request, ("Stock has been added Successfully"))
             return redirect('add_stock')
     else:
         ticker = Stock.objects.all()
